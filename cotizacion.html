@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Préstamos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/clase.prestamo.js"></script>
+    <script defer src="js/cotizacion.js"></script>
+</head>
+<body>
+    <div class="panel-desgloce">
+        <h2>Detalle del seguro cotizado</h2>
+        <p>Acá encontrarás toda la info del seguro solicitado 👇</p>
+        <p>Si deseas contratarlo <strong>haz click</strong> en <strong>CONTRATAR SEGURO</strong>.</p>
+        <hr>
+        <p>Seguro Seleccionado: <span class="label-destino">SEGURO SELECCIONADO</span></p>
+        <p>Valuacion Fiscal: <span class="label-monto">$ 1.234.567,00</span></p>
+        <p>Antigüedad del Bien a Asegurar: <span class="label-plazo">88</span> <strong>años</strong></p>
+        <p>Cuota Prima Mensual: <span class="label-cuota">$ 123.456 </span></p>
+        <p hidden>Factor: <span class="label-intereses">45,81 </span><strong>%</strong></p>
+
+        
+ 
+        <div class="centrar-elementos">
+            <button class="button-contratar" type="button">Contratar Seguro</button>
+        </div>
+    </div>
+    <div id="panelMensaje" class="centrar-elementos notification-div">
+        <p>Un broker lo contactará para terminar la contratación. ¡Muchas gracias!</p>
+    </div>
+</body>
+</html>
+

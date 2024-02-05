@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cotizador de Seguros</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/clase.prestamo.js"></script>
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>A-<strong>Segurate</strong> - Cotizador de Seguros</h1>
+        </div>
+        <nav class="barra">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#"><abbr title="3ra. entrega JS - Com. 49840">Proyecto</abbr></a></li>
+                <li><a href="#"><abbr title="Federico Ajler">Quienes Somos</abbr></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>    
+    <div class="panel-cotizacion ">
+        <h2>Somos la mejor opción para tu seguro</h2>
+        <p>Ingresa los datos a continuación para poder obtener una cotización para el seguro que estas necesitando:</p>
+
+        <label for="tasaFactor">Selecciona el seguro que quieres cotizar:</label>
+        <select id="selectSeguro">
+            <option disabled selected>Selecciona tu opción...</option>
+        </select>
+        
+        <label for="tiempoPago">Indica la antigüedad en años del bien (min.5 - max.20)</label>
+        <input type="number" id="tiempoPago" placeholder="Ingresa la cantidad de años de antigüedad (Mín.5 Max.20)"  value="5" min="5" max="20" step="1" required>
+        
+        <label for="montoPrestamo">Indica la valuación fiscal año en curso</label>
+        <input type="number" id="montoPrestamo" placeholder="Ingresá acá la valuación fiscal" required>
+        
+        <button class="button-calcular" type="button">COTIZAR SEGURO 😀</button>
+        <div id="panelMensaje" class="centrar-elementos alert-div">
+            <p>Por favor, ingresa y selecciona todos los datos solicitados. Luego pulsa el botón COTIZAR.</p>
+        </div>
+    </div>
+    </main>
+</body>
+</html>
